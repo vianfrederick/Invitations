@@ -1,0 +1,109 @@
+.hide{
+  display: none;
+}
+
+
+body{
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+
+
+.{
+
+  list-style: none;
+  text-decoration: none;
+}
+
+ul{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.sidebar{
+display: inline-block;
+  left: 0;
+  width: 100%;
+
+  background: #042331;
+
+}
+.last{
+  text-align: center;
+  padding-left: 0;
+  display: block;
+  height: 100%;
+  width : 100%;
+  line-height: 65px;
+  font-size: 1.2rem;
+  color: white;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+}
+li{
+  list-style: none;
+}
+.sidebar header{
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+}
+
+.anc{
+  text-align: left;
+  display: block;
+  height: 100%;
+  width : 100%;
+  line-height: 65px;
+  font-size: 1.2rem;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+  background-color: black;
+}
+
+
+
+ul li:hover button{
+  padding-left: 50px;
+  cursor: pointer;
+}
+.sidebar ul button i{
+  margin-right: 16px;
+}
+
+.invite{
+  border: 3px solid pink;
+  background-color: aquamarine;
+}
+
+.title{
+  background-color: black;
+  color: green;
+  text-decoration: underline;
+}
+
+.h1{
+  text-align: left;
+
+}
+.evtInput{
+  text-align: left;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+ label{
+   text-align: left; }

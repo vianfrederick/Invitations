@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+  </head>
+  <body>
+
+<img src="guest.jpg" alt="GUEST">
+<h1><%= Fname %> <%= Sname %></h1>
+<form  action="/profile" method="post">
+  <button style = "background: none!important;
+  border: none;
+  padding: 0!important;
+  font-size: x-large;
+  font-family: arial, sans-serif;
+  margin-bottom: 53px;
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;" type="anchor" name="button">Visit Profile</button>
+</form>
+    <div class="sidebar">
+      <<header>
+        Contents
+      </header>
+      <ul>
+        <form  action="/dashboard2" method="post">
+          <li><button onclick = "colour()" name="checkfor" value="1" type="submit" class="anc" ><i class="fas fa-home"></i>Home</button></li>
+          <li><button name="checkfor"value="2" type="submit"  class="anc" ><i class="fas fa-step-forward"></i>Events Choosing</button></li>
+          <li><button name="checkfor" value="3" type="submit" class="anc" ><i class="fas fa-envelope"></i>Invitaion Page</button></li>
+          <button type="submit" name="checkfor" value="4" class="last" style="background-color : #063146; cursor : pointer;">Log Out</button>
+        </form>
+
+
+      </ul>
+    </div>
+
+    <div id= "demo" class="home">
+      <div class="TopContainer">
+        <img class="top-cloud"src="cloud.png" alt="CLOUD">
+        <!-- <h1><em>Hello</em></h1> -->
+        <h1>Subash Here!!!</h1>
+        <p class="prog">Appointed as a <br> <br>CHAIRMAN OF FESTEMBER</p>
+        <img class="bottom-cloud"src="cloud.png" alt="CLOUD">
+        <picture>
+          <source srcset="mountain.png" alt="MOUNTAIN" media="(min-width : 702px)">
+    <source srcset="blue.jpg" alt="PLAIN">
+    <img src="blue.jpg" alt="PLAIN">
+        </picture>
+      </div>
+
+
+
+  <div class="middle-container">
+    <div class="profile">
+      <img class="angela"src="angela.png" alt="NO IMAGE">
+      <h2>Inviting for,</h2>
+      <p style = "font-size : 6rem;"class="intro"> Booze party</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>EVENTS.</h2>
+      <div style = "background-color : #DCDCDC; margin-bottom : 0;" class="skill-row" style = "margin-bottom : 0;">
+        <img class="cake" src="cake.jpg" alt="CHILLIES">
+        <h3 class="mediah" style = "margin-top: 0px;margin-bottom: 0px;">CAKE</h3>
+        <p  style = "margin-top: 0px;margin-bottom: 0px;" class="para mediap">Enjoy with us a delicious cake <br>6:00pm </p>
+      </div>
+      <div style = "background-color : #800000; margin-bottom : 0;" class="skill-row" style = "margin-top : 0; margin-bottom :0">
+        <img class="dance" src="dance.jpg" alt="COMPUTER">
+        <h3 class="mediah" style = "margin-top: 0px;margin-bottom: 0px;">DANCE WITH MUSIC</h3>
+        <p   style = "margin-top: 0px;margin-bottom: 0px;" class="para mediap" >Digest your cake completely by dancing with the music<br> 7:00pm </p>
+      </div>
+      <div  style = "background-color : #87CEFA; margin-bottom : 0;"class="skill-row" style = "margin-top : 0;">
+        <img class="dinner" src="dinner.png" alt="CHILLIES">
+        <h3 class="mediah" style = "margin-top: 0px;margin-bottom: 0px;">DINNER</h3>
+        <p  style = "margin-top: 0px;margin-bottom: 0px;" class="para mediap" >Feeling hungry after dance, so have an awesome dinner along with alcohol<br>8:00pm </p>
+      </div>
+    </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+
+<style>
+  .top{
+    font-size: 3rem;
+    color: green;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 60%;
+  }
+
+  .list{
+    font-size: 3.3rem;
+    color: Yellow;
+    margin: 6%;
+  }
+
+  .srcnshot{
+    font-size: 2rem;
+    color: blue;
+
+  }
+</style>
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <img src="guest.jpg" alt="GUEST">
+    <h1><%= Fname %> <%= Sname %></h1>
+    <form  action="/profile" method="post">
+      <button style = "background: none!important;
+      border: none;
+      padding: 0!important;
+      font-size: x-large;
+      font-family: arial, sans-serif;
+      margin-bottom: 53px;
+      color: #069;
+      text-decoration: underline;
+      cursor: pointer;" type="anchor" name="button">Visit Profile</button>
+    </form>
+        <div class="sidebar">
+          <<header>
+            Contents
+          </header>
+          <ul>
+            <form  action="/dashboard2" method="post">
+              <li><button name="checkfor" value="1" type="submit" class="anc" ><i class="fas fa-home"></i>Home</button></li>
+              <li><button name="checkfor"value="2" type="submit"  class="anc" ><i class="fas fa-step-forward"></i>Events Choosing</button></li>
+              <li><button name="checkfor" value="3" type="submit" class="anc" ><i class="fas fa-envelope"></i>Invitaion Page</button></li>
+              <button type="submit" name="checkfor" value="4" class="last" style="background-color : #063146; cursor : pointer;">Log Out</button>
+            </form>
+
+
+          </ul>
+        </div>
+
+<div style="background-image : url('background.jpg'); " class="final">
+  <span style="color : blue; font-size : 3rem; margin-bottom : 6%; font-family : 'Goudy Old Style'">Invitation</span>
+
+<h1 style = "color : white; margin-top : 13%;">Hello <%= Fname %> <%= Sname %> </h1>
+
+<h2>Welcome and have a great party ahead !!!!</h2>
+
+<h4 class ="top ">Your are in:</h4>
+<ul>
+  <li style = "font-family : 'Goudy Old Style'"  class="list"><%= C1 %></li>
+  <li style = "font-family : 'Goudy Old Style'"  class="list"><%= C2 %></li>
+  <li style = "font-family : 'Goudy Old Style'"  class="list"><%= C3 %></li>
+</ul>
+
+
+<h4 class="top">Your Id :</h4>
+<h4 class="list"><%= ID %></h4>
+
+<h4 class="srcnshot">Please take a screenshot of this page while coming</h4>
+
+
+</div>
+  </body>
+</html>

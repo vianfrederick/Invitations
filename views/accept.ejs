@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <style>
+
+
+      .button {
+        text-align : center;
+        border-radius : 15px;
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+margin : 12%;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.warning{
+  background-color: white;
+  color: red;
+  border : 4px solid black;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.warnTitle{
+  color: Red;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>
+  </head>
+  <body>
+
+<img src="guest.jpg" alt="GUEST">
+<h1><%= Fname %> <%= Sname %></h1>
+<form  action="/profile" method="post">
+  <button style = "background: none!important;
+  border: none;
+  padding: 0!important;
+  font-size: x-large;
+  font-family: arial, sans-serif;
+  margin-bottom: 53px;
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;" type="anchor" name="button">Visit Profile</button>
+</form>
+    <div class="sidebar">
+      <header>
+        Contents
+      </header>
+      <ul>
+        <form  action="/dashboard2" method="post">
+          <li><button name="checkfor" value="1" type="submit" class="anc" ><i class="fas fa-home"></i>Home</button></li>
+          <li><button name="checkfor"value="2" type="submit"  class="anc" ><i class="fas fa-step-forward"></i>Events Choosing</button></li>
+
+          <li><button name="checkfor" value="3" type="submit" class="anc" ><i class="fas fa-envelope"></i>Invitaion Page</button></li>
+          <button type="submit" name="checkfor" value="4" class="last" style="background-color : #063146; cursor : pointer;">Log Out</button>
+        </form>
+      </ul>
+    </div>
+
+<div class="invite">
+<div class="title">
+  <h1 class="h1" style="margin-left : 8%">Events Choosing</h1>
+</div>
+
+<div class="warning">
+    <h3 class="warnTitle">Warning : Please check all of your interested events each time you log in.</h3>
+    <p>For eg: Suppose cake is already checked and accepted and if you check only dinner the next time you log in , it means you are invited only to dinner and rejected cake.</p>
+</div>
+
+   <form class="" action="/eventsave" method="post">
+     <label style = "font-family : 'Goudy Old Style'" class="container">CAKE
+       <input name="inp1" type="checkbox" value = "1">
+       <span style= "margin-left : 32px;  color: blue;"><%= hint1 %></span>
+
+       <span class="checkmark"></span>
+     </label>
+     <label style = "font-family : 'Goudy Old Style'"  class="container">DANCE WITH MUSIC
+       <input  name="inp2" type="checkbox" value = "2">
+       <span style= "margin-left : 32px;  color: blue;"><%= hint2 %></span>
+
+       <span class="checkmark"></span>
+     </label>
+     <label  style = "font-family : 'Goudy Old Style'" class="container">DINNER
+       <input name="inp3" type="checkbox" value = "3">
+       <span style= "margin-left : 32px;  color: blue;"><%= hint3 %></span>
+       <span class="checkmark"></span>
+     </label>
+
+     <button class="button" type="submit" name="save">SAVE</button>
+   </form>
+
+</div>
+
+  </body>
+</html>

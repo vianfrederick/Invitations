@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fail</title>
+  <link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body>
+
+
+
+  <div class="box" id="heading">
+    <h1 class="h12"><%= heading %></h1>
+  </div>
+
+
+  <div class="box">
+
+
+<p class = "fail"><%= message %></p>
+
+
+    <form class = "item" action="/register" method="post">
+
+
+       <button type="submit" name="list" value="">TRY AGAIN</button>
+<input type="hidden" name="dummy" value="<%= heading %>">
+
+    </form>
+  </div>
+
+
+  <footer>
+    Copyright @ Vian Frederick
+  </footer>
+
+
+  </body>
+
+  </html>
